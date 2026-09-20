@@ -14,7 +14,7 @@ Organizational Units for IT, Sales, and HR. Created test user accounts within
 each OU and added them to matching security groups (e.g. IT-Staff) to 
 demonstrate group-based access management, a core AD administration task.
 
-![HR OU and Security Group](./HR_workforce.png)
+![HR and OU Security Group](./HR_workforce.png)
 ![Sales OU and Security Group](./sales_workforce_group.png)
 
 ### DHCP Configuration
