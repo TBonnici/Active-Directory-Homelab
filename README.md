@@ -5,18 +5,21 @@ Directory Domain Services (AD DS) role via Server Manager. Promoted the server
 to a domain controller, creating a new forest and root domain, homelab.local. 
 Configured a static IP (10.10.10.1) on the server prior to promotion so the 
 domain's DNS would resolve consistently.
+!
 
 ### Organizational Units, Users & Groups
 Built an OU structure to reflect a small organization, with separate 
 Organizational Units for IT, Sales, and HR. Created test user accounts within 
 each OU and added them to matching security groups (e.g. IT-Staff) to 
 demonstrate group-based access management, a core AD administration task.
+!
 
 ### DHCP Configuration
 Installed and configured the DHCP server role on the domain controller, 
 creating a scope (10.10.10.100–10.10.10.200) to automatically assign IP 
 addressing, subnet mask, and DNS server information to domain-joined clients — 
 removing the need for manual client-side network configuration.
+!
 
 ### Client Domain Join
 Deployed a second VM running Windows 10/11 on the same internal network, 
