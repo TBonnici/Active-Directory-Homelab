@@ -5,25 +5,25 @@ Directory Domain Services (AD DS) role via Server Manager. Promoted the server
 to a domain controller, creating a new forest and root domain, homelab.local. 
 Configured a static IP (10.10.10.1) on the server prior to promotion so the 
 domain's DNS would resolve consistently.
-![Server Manager Local Server](./Network_config.png)
-![AD DS Dashboard](./AD_DS_server_mngr.png)
+![Server Manager Local Server]<img width="1059" height="778" alt="Network config" src="https://github.com/user-attachments/assets/763f9ae2-710a-4827-b295-68844ac75cfb" />
+![AD DS Dashboard]<img width="1008" height="854" alt="AD DS server mngr" src="https://github.com/user-attachments/assets/3c841e7d-dea6-4d63-92fa-d8eb50fd6089" />
 
 ### Organizational Units, Users & Groups
 Built an OU structure to reflect a small organization, with separate 
 Organizational Units for IT, Sales, and HR. Created test user accounts within 
 each OU and added them to matching security groups (e.g. IT-Staff) to 
 demonstrate group-based access management, a core AD administration task.
+![HR and OU Security Group]<img width="748" height="594" alt="HR workforce" src="https://github.com/user-attachments/assets/9e285246-7a1d-45db-b215-5dd843cbd3be" />
+![Sales OU and Security Group]<img width="721" height="583" alt="sales workforce group" src="https://github.com/user-attachments/assets/370efe0b-10a6-404e-ab12-1ae9e08978cd" />
 
-![HR and OU Security Group](./HR_workforce.png)
-![Sales OU and Security Group](./sales_workforce_group.png)
 
 ### DHCP Configuration
 Installed and configured the DHCP server role on the domain controller, 
 creating a scope (10.10.10.100–10.10.10.200) to automatically assign IP 
 addressing, subnet mask, and DNS server information to domain-joined clients — 
 removing the need for manual client-side network configuration.
+![DHCP Dashboard]<img width="1011" height="848" alt="DHCP server" src="https://github.com/user-attachments/assets/85781300-0af6-4a84-b340-91a51fcafce1" />
 
-![DHCP Dashboard](./DHCP_server.png)
 
 ### Client Domain Join
 Deployed a second VM running Windows 10/11 on the same internal network, 
@@ -41,9 +41,9 @@ and confirmed the banner displayed at the Windows login screen.
 Ran gpupdate /force on the client to confirm the Group Policy applied without 
 errors, and verified via System settings that the client showed as joined to 
 the homelab.local domain rather than a local workgroup.
+![Domain Admin Login](<img width="1005" height="844" alt="User logon admin" src="https://github.com/user-attachments/assets/21553835-e0ca-4289-90c4-f4c7ee8a6e1b" />
+![Domain User Login (jsmith)]<img width="1026" height="839" alt="clientlogin" src="https://github.com/user-attachments/assets/f34ea41b-0012-4841-92ff-cf8f48a51072" />
 
-![Domain Admin Login](./User_logon_admin.png)
-![Domain User Login (jsmith)](./clientlogin.png)
 
 ## What I Learned
 This lab gave me hands-on experience with core Windows Server administration: 
@@ -64,6 +64,5 @@ corrected the controller type, and attached the previously created virtual
 disk to the SATA controller. This resolved the issue and allowed installation 
 to proceed. This reinforced the importance of verifying virtual hardware 
 configuration before troubleshooting at the OS/software level.
+![NAT vs Internal Network Misconfiguration]<img width="984" height="517" alt="client connection" src="https://github.com/user-attachments/assets/26664556-0929-4f02-9659-7aee90a3d436" />
 
-![NAT vs Internal Network Misconfiguration](./client_connection.png)
-![Sign-in Method Error](./unauthorized.png)
