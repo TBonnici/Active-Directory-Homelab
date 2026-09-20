@@ -13,6 +13,7 @@ Built an OU structure to reflect a small organization, with separate
 Organizational Units for IT, Sales, and HR. Created test user accounts within 
 each OU and added them to matching security groups (e.g. IT-Staff) to 
 demonstrate group-based access management, a core AD administration task.
+
 ![HR OU and Security Group](./HR_workforce.png)
 ![Sales OU and Security Group](./sales_workforce_group.png)
 
@@ -21,6 +22,7 @@ Installed and configured the DHCP server role on the domain controller,
 creating a scope (10.10.10.100–10.10.10.200) to automatically assign IP 
 addressing, subnet mask, and DNS server information to domain-joined clients — 
 removing the need for manual client-side network configuration.
+
 ![DHCP Dashboard](./DHCP_server.png)
 
 ### Client Domain Join
@@ -39,6 +41,7 @@ and confirmed the banner displayed at the Windows login screen.
 Ran gpupdate /force on the client to confirm the Group Policy applied without 
 errors, and verified via System settings that the client showed as joined to 
 the homelab.local domain rather than a local workgroup.
+
 ![Domain Admin Login](./User_logon_admin.png)
 ![Domain User Login (jsmith)](./clientlogin.png)
 
@@ -61,5 +64,6 @@ corrected the controller type, and attached the previously created virtual
 disk to the SATA controller. This resolved the issue and allowed installation 
 to proceed. This reinforced the importance of verifying virtual hardware 
 configuration before troubleshooting at the OS/software level.
+
 ![NAT vs Internal Network Misconfiguration](./client_connection.png)
 ![Sign-in Method Error](./unauthorized.png)
