@@ -5,8 +5,8 @@ Directory Domain Services (AD DS) role via Server Manager. Promoted the server
 to a domain controller, creating a new forest and root domain, homelab.local. 
 Configured a static IP (10.10.10.1) on the server prior to promotion so the 
 domain's DNS would resolve consistently.
-![Server Manager Local Server]<img width="1059" height="778" alt="Network config" src="https://github.com/user-attachments/assets/763f9ae2-710a-4827-b295-68844ac75cfb" />
-![AD DS Dashboard]<img width="1008" height="854" alt="AD DS server mngr" src="https://github.com/user-attachments/assets/3c841e7d-dea6-4d63-92fa-d8eb50fd6089" />
+<img width="1059" height="778" alt="Network config" src="https://github.com/user-attachments/assets/763f9ae2-710a-4827-b295-68844ac75cfb" />
+!<img width="1008" height="854" alt="AD DS server mngr" src="https://github.com/user-attachments/assets/3c841e7d-dea6-4d63-92fa-d8eb50fd6089" />
 
 ### Organizational Units, Users & Groups
 Built an OU structure to reflect a small organization, with separate 
